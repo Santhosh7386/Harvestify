@@ -1,4 +1,7 @@
-streamlit>=1.36
-tensorflow==2.20.0
-numpy>=1.26
-pillow>=10.3
+# requirements.txt (minimal for CPU PyTorch on Streamlit Cloud Linux)
+torch==2.4.1
+torchvision==0.19.1
+torchaudio==2.4.1
+streamlit==1.49.1
+# (Optional) If installs complain, add the next line:
+# --extra-index-url https://download.pytorch.org/whl/cpu
