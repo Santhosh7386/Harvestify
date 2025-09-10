@@ -1,7 +1,19 @@
-# requirements.txt (minimal for CPU PyTorch on Streamlit Cloud Linux)
-torch==2.4.1
-torchvision==0.19.1
-torchaudio==2.4.1
+# Streamlit
 streamlit==1.49.1
-# (Optional) If installs complain, add the next line:
+
+# PyTorch stack for Python 3.13 (CPU wheels available)
+torch==2.8.0
+torchvision==0.23.0
+torchaudio==2.8.0
+
+# (Optional) If resolution ever fails on your runner, add this line:
 # --extra-index-url https://download.pytorch.org/whl/cpu
+
+# If you are NOT using TensorFlow, remove it to speed up build & save RAM.
+# tensorflow==2.20.0
+# tensorboard==2.20.0
+
+# (keep anything else you actually use, e.g.)
+pillow==11.3.0
+numpy==2.3.3
+pandas==2.3.2
